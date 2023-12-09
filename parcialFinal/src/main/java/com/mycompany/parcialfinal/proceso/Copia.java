@@ -2,55 +2,55 @@
 package com.mycompany.parcialfinal.proceso;
 
 public class Copia {
-    private String identificador;
+    private int identificador;
     private String estado;
     private Libro libro;
     private Lector lector;
+    private Prestamo prestamo;
 
-    public Copia(String identificador, String estado) {
+    public Copia(int identificador, Libro libro) {
         this.identificador = identificador;
-        this.estado = estado;
+        this.estado = "No prestado";
+        this.libro = libro;
     }
     
     public void devolver(){
-        
+        if ("prestado".equals(estado)) {
+            this.lector.removerCopia(this);
+            estado = "NoPrestado";
+            this.prestamo = null;
+            setLector(null);
+        }
     }
     public void prestar(){
-        
-    }
-
-    public String getIdentificador() {
-        return identificador;
-    }
-
-    public void setIdentificador(String identificador) {
-        this.identificador = identificador;
-    }
-
-    public String getEstado() {
-        return estado;
-    }
-
-    public void setEstado(String estado) {
-        this.estado = estado;
-    }
-
-    public Libro getLibro() {
-        return libro;
-    }
-
-    public void setLibro(Libro libro) {
-        this.libro = libro;
-    }
-
-    public Lector getLector() {
-        return lector;
+         if ("NoPrestado".equals(estado)) {
+            estado = "prestado";
+            this.prestamo = new Prestamo(new Date());
+            setLector(lector);
+            lector.agregarCopia(this);
+        }
     }
 
     public void setLector(Lector lector) {
         this.lector = lector;
     }
+    public int getIdentificador() {
+        return identificador;
+    }
 
-    
-    
+    public String getEstado() {
+        return estado;
+    }
+ 
+    public Libro getLibro() {
+        return libro;
+    }
+ 
+    public Lector getLector() {
+        return lector;
+    }
+    public Prestamo getPrestamo() {
+        return prestamo;
+    }
+   
   }
