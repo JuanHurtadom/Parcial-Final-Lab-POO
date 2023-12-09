@@ -7,7 +7,7 @@ public class Libro {
     private String nombre;
     private String tipo;
     private String editorial;
-    private int año;
+    private String año;
     private ArrayList<Copia> copias;
     private ArrayList<Autor> autores;
 
