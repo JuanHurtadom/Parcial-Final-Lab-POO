@@ -7,7 +7,7 @@ Entrega de parcial final de laboratorio de programación orientada a objetos
 La representación gráfica proporciona una visión detallada del flujo de ejecución, abarcando la interacción entre distintas funcionalidades como préstamos, devoluciones, la actualización de multas y el pago de estas. La "enredada" visualizacion y entendimiento del diagrama podría resultar desafiante para un usuario común, ya que involucra diversas operaciones y formularios que requieren comprensión y uso preciso. Además, la gestión de multas y la persistencia de datos introducen niveles adicionales de complejidad que podrían resultar desconcertantes para aquellos no familiarizados con la lógica interna del sistema.
 
 # Diagrama de proceso
-<img width="280" alt="Diagrama de proceso" src="https://github.com/JuanHurtadom/Parcial-Final-Lab-POO/assets/142424907/74556fce-d6da-4f8d-a60f-51231c2db03d">
+<img width="480" alt="Diagrama de proceso" src="https://github.com/JuanHurtadom/Parcial-Final-Lab-POO/assets/142424907/cb1cbbc5-4808-4a1b-aca7-50e6ed26b511">
 # Parcial Final - Sistema de Biblioteca
 
 ## Descripción
