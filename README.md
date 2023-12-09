@@ -26,27 +26,22 @@ Este proyecto implementa un sistema básico de biblioteca que permite gestionar 
    - **Método:** `GET`
    - **Descripción:** Retorna la lista de lectores en formato JSON.
 
-### 3. Obtener lista de lectores (HTML)
-   - **Ruta:** `/lectores/html`
-   - **Método:** `GET`
-   - **Descripción:** Muestra la lista de lectores en formato HTML con opciones interactivas.
-
-### 4. Realizar préstamo de libro
+### 3. Realizar préstamo de libro
    - **Ruta:** `/prestamo/html`
    - **Método:** `GET`
    - **Descripción:** Muestra un formulario para realizar un préstamo, seleccionando un lector y un libro.
 
-### 5. Realizar préstamo (Ejecución)
+### 4. Realizar préstamo (Ejecución)
    - **Ruta:** `/prestamo/realizar`
    - **Método:** `POST`
    - **Descripción:** Maneja la realización del préstamo después de enviar el formulario.
 
-### 6. Realizar devolución de libro
+### 5. Realizar devolución de libro
    - **Ruta:** `/devolucion/html`
    - **Método:** `GET`
    - **Descripción:** Muestra un formulario para realizar una devolución, seleccionando una copia.
 
-### 7. Realizar devolución (Ejecución)
+### 6. Realizar devolución (Ejecución)
    - **Ruta:** `/devolucion/realizar`
    - **Método:** `POST`
    - **Descripción:** Maneja la realización de la devolución después de enviar el formulario.
