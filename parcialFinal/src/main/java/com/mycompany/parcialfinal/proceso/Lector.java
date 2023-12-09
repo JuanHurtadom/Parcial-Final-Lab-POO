@@ -1,7 +1,7 @@
 
 package com.mycompany.parcialfinal.proceso;
 
-import java.util.List;
+import java.util.ArrayList;
 
 
 public class Lector {
@@ -9,7 +9,7 @@ public class Lector {
     private String nombre;
     private String apellidos;
     private String direccion;
-    private List<Copia> copias;
+    private ArrayList<Copia> copias;
     private Multa multa;
 
     public Lector(int numSocio, String nombre, String apellidos, String direccion) {
