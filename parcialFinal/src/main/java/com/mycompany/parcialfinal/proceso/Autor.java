@@ -8,6 +8,17 @@ import java.util.List;
 public class Autor {
     private String nombre;
     private String nacionalidad;
-    private Date fechaNacimiento;
-    private List<Libro> libros;
+    private String fechaNacimiento;
+
+    public Autor(String nombre, String nacionalidad, String fechaNacimiento) {
+        this.nombre = nombre;
+        this.nacionalidad = nacionalidad;
+        this.fechaNacimiento = fechaNacimiento;
+    }
+
+    
+    @Override
+    public String toString() {
+        return "Autor{" + "nombre=" + nombre + ", nacionalidad=" + nacionalidad + ", fechaNacimiento=" + fechaNacimiento + '}';
+    }
 }
