@@ -17,17 +17,17 @@ Este proyecto implementa un sistema básico de biblioteca que permite gestionar 
 ## Endpoints
 
 ### 1. Obtener lista de libros (JSON)
-   - **Ruta:** `/libros/json`
+   - **Ruta:** `http://localhost:4567/libros/json`
    - **Método:** `GET`
    - **Descripción:** Retorna la lista de libros en formato JSON.
 
 ### 2. Obtener lista de lectores (JSON)
-   - **Ruta:** `/lectores/json`
+   - **Ruta:** `http://localhost:4567/lectores/json`
    - **Método:** `GET`
    - **Descripción:** Retorna la lista de lectores en formato JSON.
 
 ### 3. Realizar préstamo de libro
-   - **Ruta:** `/prestamo/html`
+   - **Ruta:** `http://localhost:4567/prestamo/html`
    - **Método:** `GET`
    - **Descripción:** Muestra un formulario para realizar un préstamo, seleccionando un lector y un libro.
 
@@ -37,7 +37,7 @@ Este proyecto implementa un sistema básico de biblioteca que permite gestionar 
    - **Descripción:** Maneja la realización del préstamo después de enviar el formulario.
 
 ### 5. Realizar devolución de libro
-   - **Ruta:** `/devolucion/html`
+   - **Ruta:** `http://localhost:4567/devolucion/html`
    - **Método:** `GET`
    - **Descripción:** Muestra un formulario para realizar una devolución, seleccionando una copia.
 
@@ -55,18 +55,14 @@ Este proyecto implementa un sistema básico de biblioteca que permite gestionar 
 2. **Obtener lista de lectores (JSON):**
    - Accede a la ruta `/lectores/json` utilizando un cliente HTTP.
    - Recibirás un JSON con la lista de lectores.
-
-3. **Obtener lista de lectores (HTML):**
-   - Accede a la ruta `/lectores/html` desde tu navegador web.
-   - Verás una lista interactiva de lectores en formato HTML.
-
-4. **Realizar préstamo de libro:**
+     
+3. **Realizar préstamo de libro:**
    - Accede a la ruta `/prestamo/html` desde tu navegador.
    - Completa el formulario seleccionando un lector y un libro.
    - Envía el formulario.
    - Verifica que el préstamo se haya realizado correctamente.
 
-5. **Realizar devolución de libro:**
+4. **Realizar devolución de libro:**
    - Accede a la ruta `/devolucion/html` desde tu navegador.
    - Completa el formulario seleccionando una copia.
    - Envía el formulario.
